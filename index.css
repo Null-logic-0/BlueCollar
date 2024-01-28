@@ -1,0 +1,4174 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+  
+  /* overheader */
+  
+  .overheader {
+    width: 100%;
+    min-height: 69px;
+    height: auto;
+    background-color: #f2f2f2;
+    padding: 0 20px;
+  }
+  
+  .overheader-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 21px;
+  }
+  
+  .overheader-title {
+    color: #1c2752;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .overheader-nav {
+    display: flex;
+    flex-direction: row;
+    gap:17px;
+
+    
+  }
+  
+  .overheader-link {
+    color: #1c2752;
+    margin-left: 20px;
+    transition: 0.2s;
+  }
+  
+  .overheader-link:hover {
+    color: #ffb342;
+  }
+  
+  .overheader-link:first-child {
+    margin-left: 0;
+  }
+  
+  /* header */
+  
+  .header {
+    width: 100%;
+    height: 159px;
+    background-color: #f5f5f5;
+  }
+  
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 129px;
+  }
+  
+  .header-contact {
+    width: 623px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-contact-text {
+    margin-left: 15px;
+  }
+  
+  .header-mail,
+  .header-phone {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hc-text {
+    color: #1c2752;
+    font-size: 20px;
+    font-family: "Mulish", sans-serif;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+  }
+  
+  .hc-contact {
+    position: relative;
+    color: #7e7e7e;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    text-decoration: none;
+    letter-spacing: 0.36px;
+  }
+  
+  .hc-contact:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #7e7e7e;
+    opacity: 0;
+    transition: 0.2s;
+  }
+  
+  .hc-contact:hover:after {
+    opacity: 1;
+  }
+  
+  /* intro */
+  
+  .intro {
+    width: 100%;
+    min-height: 813px;
+    height: auto;
+    background: url("./images/hero-banner.jpg") center no-repeat;
+    background-size: cover;
+  }
+  
+  .intro-inner {
+    position: relative;
+  }
+  
+  .intro-nav-and-btn {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    min-height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffb342;
+    margin-bottom: 30px;
+  }
+  
+  .intro-nav {
+    display: flex;
+    margin-left: 20px;
+    width: 643px;
+  }
+  
+  .intro-nav-link {
+    margin: 0 20px;
+    color: #222222;
+    font-size: 19px;
+    font-family: "Inter", sans-serif;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  .intro-nav-link:hover {
+    color: #fff;
+  }
+  
+  .intro-btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 19px 42px;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    background-color: #1c2752;
+    border: 1px solid transparent;
+    color: #f4f4f4;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  .intro-btn:hover,
+  .intro-text-btn:hover {
+    background-color: #f4f4f4;
+    color: #1c2752;
+  }
+  
+  .intro-text {
+    padding-top: 200px;
+    max-width: 720px;
+    height: 333px;
+  }
+  
+  .intro-slogan {
+    display: flex;
+    align-items: center;
+    width: 520px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 33px;
+  }
+  
+  .is-img {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  
+  .is-text {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .intro-title {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 60px;
+    font-family: "Mulish", sans-serif;
+    line-height: 78px;
+    letter-spacing: 1.2px;
+    margin-bottom: 29px;
+  }
+  
+  .intro-text-btn {
+    display: inline-block;
+    color: #1c2752;
+    background-color: #ffb342;
+    padding: 19px 42px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  /* modal */
+  
+  label {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .button {
+    font-size: 60px;
+    text-align: center;
+    color: #e0963a;
+    margin-left: 20px;
+    transition: 0.2s;
+  }
+  
+  .modal {
+    position: fixed;
+    z-index: 1;
+    right: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.2s;
+  }
+  
+  .modal__check {
+    display: none;
+  }
+  
+  .modal__info {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 20px 5px;
+    background-color: rgba(255, 255, 255, 0.95);
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.2s;
+    z-index: 5000;
+  }
+  
+  .modal__close {
+    visibility: visible;
+    font-family: serif;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 36px;
+    line-height: 25px;
+    text-align: center;
+  }
+  
+  .modal__closetwo {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .modal__check:checked + .modal {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .button:hover,
+  .modal__close:hover {
+    opacity: 0.7;
+  }
+  
+  .modal__info::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .logo_responsive {
+    display: none;
+  }
+  
+  /* about */
+  
+  .about {
+    width: 100%;
+    min-height: 861px;
+    height: auto;
+    padding: 140px 120px;
+    background-color: #f5f5f5;
+  }
+  
+  .about-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .about-image,
+  .about-info {
+    width: 575px;
+  }
+  
+  .about-info {
+    padding: 12px 0;
+  }
+  
+  .welcome {
+    display: flex;
+    align-items: center;
+    max-width: 249px;
+    padding: 0 20px;
+    background-color: #d4d4d4;
+    margin-top: 10px;
+    margin-bottom: 22px;
+  }
+  
+  .welcome-icon {
+    margin-right: 10px;
+  }
+  
+  .welcome-text {
+    color: #1c2752;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .about-bc-title {
+    color: #1c2752;
+    font-size: 45px;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    margin-bottom: 12px;
+  }
+  
+  .about-bc-text1,
+  .about-bc-text2 {
+    color: #7e7e7e;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .about-bc-text1 {
+    width: 552px;
+    padding-bottom: 10px;
+  }
+  
+  .about-bc-text2 {
+    width: 571px;
+    font-size: 17px;
+  }
+  
+  .about-info2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 27px;
+  }
+  
+  .exp1 {
+    width: 198px;
+    height: 220px;
+    background-color: #d4d4d4;
+    text-align: center;
+  }
+  
+  .years-digits {
+    max-width: 100px;
+    width: 60%;
+    padding-top: 24px;
+  }
+  
+  .years-of-exp {
+    color: #1c2752;
+    padding: 0 43px;
+    padding-top: 16px;
+    font-size: 20px;
+    font-family: "Mulish", sans-serif;
+  }
+  
+  .exp2 {
+    width: 338px;
+  }
+  
+  .exp_2 {
+    color: #7e7e7e;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    margin-bottom: 10px;
+  }
+  
+  /* offers */
+  
+  .offers {
+    width: 100%;
+    height: auto;
+    max-height: 900px;
+    background-color: #ffb342;
+    padding-top: 150px;
+    margin-bottom: 200px;
+  }
+  
+  .offers-header {
+    width: 100%;
+    max-width: 832px;
+    height: 289px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .offers-subtitle {
+    width: 207px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 0 20px;
+    margin-bottom: 12px;
+  }
+  
+  .offers-subtitle-img {
+    margin-right: 10px;
+  }
+  
+  .offers_subtitle {
+    color: #1c2752;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .offers-title {
+    color: #1c2752;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: "Mulish", sans-serif;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    margin-bottom: 12px;
+  }
+  
+  .offers-header-info {
+    color: #1c2752;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  /* slider */
+  
+  .offers-slider {
+    position: relative;
+    width: 1160px;
+    height: 528px;
+    margin: 0 auto;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .offers-slider input[name="labels"] {
+    display: none;
+  }
+  
+  .labels {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .labels label {
+    display: inline-block;
+    width: 249px;
+    height: 68px;
+    cursor: pointer;
+    margin: 0 20px;
+  
+    border: 1px solid #1c2752;
+    background-color: transparent;
+    transition: 0.2s;
+    vertical-align: top;
+  }
+  
+  .lbl-inner {
+    display: flex;
+    align-items: center;
+    padding: 14px 41px;
+  }
+  
+  .lbl-icon {
+    margin-right: 10px;
+  }
+  
+  .lbl-name {
+    color: #222222;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+  }
+  
+  #btn1:checked ~ .labels label[for="btn1"] {
+    background-color: white;
+  }
+  
+  #btn2:checked ~ .labels label[for="btn2"] {
+    background-color: white;
+  }
+  
+  #btn3:checked ~ .labels label[for="btn3"] {
+    background-color: white;
+  }
+  
+  .offers_slider {
+    overflow: hidden;
+  }
+  
+  .slider-items {
+    width: 3480px;
+    transition: all 0.5s;
+    display: flex;
+  }
+  
+  .offers-slide {
+    width: 1160px;
+    height: 528px;
+    padding: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .offers-slide-half1 {
+    max-width: 624px;
+    height: 408px;
+  }
+  
+  .off-sl-info {
+    display: flex;
+    align-items: center;
+    width: 260px;
+    background-color: #f4f4f4;
+    padding: 8px 16px;
+  }
+  
+  .off-sl-subtitle {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #1c2752;
+  }
+  
+  .offers-slide-title {
+    color: #1c2752;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    font-family: "Mulish", sans-serif;
+    margin-top: 23px;
+    margin-bottom: 12px;
+  }
+  
+  .offers-slide-text1,
+  .offers-slide-text2 {
+    color: #7e7e7e;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .offers-slide-text1 {
+    max-width: 508px;
+    margin-bottom: 10px;
+  }
+  
+  .offers-slide-text2 {
+    max-width: 549px;
+  }
+  
+  .offers-slide-btn {
+    display: inline-block;
+    background-color: #ffb342;
+    text-decoration: none;
+    color: #1c2752;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    line-height: 30px;
+    border: 2px solid transparent;
+    margin-top: 27px;
+    padding: 19px 42px;
+    transition: 0.2s;
+  }
+  
+  .offers-slide-btn:hover {
+    background-color: transparent;
+    border: 2px solid #1c2752;
+  }
+  
+  #btn1:checked ~ .offers_slider .slider-items {
+    transform: translate(0);
+  }
+  
+  #btn2:checked ~ .offers_slider .slider-items {
+    transform: translate(-1160px);
+  }
+  
+  #btn3:checked ~ .offers_slider .slider-items {
+    transform: translate(-2320px);
+  }
+  
+  /* services */
+  
+  .services {
+    width: 100%;
+    min-height: 1397px;
+    height: auto;
+    background-color: #f4f4f4;
+    margin-top: -200px;
+  }
+  
+  .services-inner {
+    min-height: 786px;
+    padding-top: 240px;
+    max-width: 1200px;
+    min-height: 1017px;
+    height: auto;
+  }
+  
+  .services-header {
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 49.64px;
+  }
+  
+  .services-subtitle {
+    width: 213px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    padding: 0 19px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .services-img {
+    margin-right: 14px;
+  }
+  
+  .services_subtitle {
+    color: #1c2752;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .services-title {
+    color: #1c2752;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: "Mulish", sans-serif;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    margin-bottom: 12px;
+  }
+  
+  .services_header_info {
+    max-width: 819px;
+    color: #7e7e7e;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .services-items {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    width: 380px;
+    height: 378px;
+    background-color: #1c2752;
+    margin-bottom: 30px;
+    padding: 50px 35px;
+  }
+  
+  .service-item-title {
+    color: #ffb342;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: "Mulish", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .service-item-info {
+    color: #d2d2d2;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 22px;
+  }
+  
+  .service-item-btn {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    transition: 0.2s;
+  }
+  
+  .service-item-btn:hover {
+    color: #ffb342;
+  }
+  
+  /* why-choose-us */
+  
+  .why-choose-us {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 848px;
+    height: auto;
+    background-color: #fff;
+  }
+  
+  .why-choose-us-inner {
+    display: flex;
+  }
+  
+  .wcu-half1,
+  .wcu-half2 {
+    width: 50%;
+  }
+  
+  .wcu-half1 {
+    height: 848px;
+    background: url("./images/why.png") center no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+  }
+  
+  .wcu-half1-inner {
+    width: 560px;
+    height: 568px;
+    padding-top: 100px;
+    padding-left: 80px;
+    margin: 0 auto;
+    background-color: rgba(28, 39, 82, 0.86);
+  }
+  
+  .wcuh1-item {
+    width: 400px;
+    height: 67px;
+    border: 1px solid #ffffff;
+    margin-bottom: 23px;
+    display: flex;
+  }
+  
+  .wchu1-num {
+    color: #1c2752;
+    background-color: #ffb342;
+    width: 110px;
+    height: 100%;
+    padding-top: 16px;
+    padding-left: 21px;
+    font-size: 24px;
+    font-family: "Mulish", sans-serif;
+    line-height: 35px;
+    letter-spacing: 0.36px;
+  }
+  
+  .wchu1-info {
+    color: #ffffff;
+    padding-top: 16px;
+    padding-left: 20px;
+    font-size: 25px;
+    font-family: "Mulish", sans-serif;
+    line-height: 35px;
+    letter-spacing: 0.36px;
+  }
+  
+  .wcu-half2 {
+    height: 848px;
+    padding-top: 93.36px;
+    padding-left: 70px;
+    background-color: #fff;
+  }
+  
+  .wcu-half2-inner {
+    width: 592px;
+    max-height: 692px;
+    height: auto;
+  }
+  
+  .wcuh2-header {
+    display: flex;
+    align-items: center;
+    width: 213px;
+    padding: 0 20px;
+    background-color: #d4d4d4;
+    margin-bottom: 23px;
+  }
+  
+  .wcuh2-icon {
+    margin-right: 14px;
+  }
+  
+  .wcuh2-name {
+    color: #1c2752;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .wcuh2-title {
+    color: #1c2752;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: "Mulish", sans-serif;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    margin-bottom: 11px;
+  }
+  
+  .wcuh2-info {
+    color: #7e7e7e;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    margin-bottom: 50px;
+  }
+  
+  .wchu2-item {
+    display: flex;
+    width: 502px;
+    height: 97px;
+    margin-bottom: 25px;
+  }
+  
+  .wchu2-list-img {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+  }
+  
+  .wchu2-list-title {
+    color: #1c2752;
+    font-size: 20px;
+    font-family: "Mulish", sans-serif;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+    margin-bottom: 8px;
+  }
+  
+  .wchu2-list-info {
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    color: #7e7e7e;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  /* recent projects */
+  
+  .recent-projects {
+    width: 100%;
+    min-height: 981px;
+    height: auto;
+    background-color: #1c2752;
+  }
+  
+  .recent-projects-inner {
+    width: 1400px;
+    padding-top: 140px;
+  }
+  
+  .rec-proj-header {
+    max-width: 1200px;
+    width: 100%;
+    height: 117px;
+    text-align: center;
+  }
+  
+  .rec_proj_header {
+    width: 173px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 22px;
+  }
+  
+  .rec-proj-img {
+    margin-right: 14px;
+  }
+  
+  .pec-proj-title {
+    color: #1c2752;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .recent-projects-title {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+  
+  .recent_projects_title {
+    color: #fff;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+  }
+  
+  .recent-projects-items {
+    max-width: 1400px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 49px;
+    padding-bottom: 120px;
+  }
+  
+  .recent-projects-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    margin-bottom: 15px;
+    height: 514px;
+    padding: 21px;
+    background-color: #fff;
+  }
+  
+  .recent-projects-image {
+    margin-bottom: 27px;
+    width: 250px;
+  
+  }
+  
+  .recent-project-text {
+    text-align: center;
+  }
+  
+  .recent-projects-title {
+    width: 69.06%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #1c2752;
+    font-family: "Mulish", sans-serif;
+    font-size: 25px;
+    line-height: 37.5px;
+    letter-spacing: 0.36px;
+    transition: 0.2s;
+  }
+  
+  .recent-projects-title:hover {
+    color: #ffb342;
+  }
+  
+  .recent-projects-desc {
+    color: #7e7e7e;
+    font-family: "Inter", sans-serif;
+    margin-top: 4px;
+    font-size: 17px;
+    letter-spacing: 0.36px;
+    line-height: 27px;
+  }
+  
+  /* slider-and-form */
+  
+  .slider-and-form {
+    width: 100%;
+    min-height: 1508px;
+    height: auto;
+    background-color: #fff;
+  }
+  
+  .saf-inner {
+    padding: 140px 0;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .saf-half1 {
+    width: 591.06px;
+    height: 947px;
+  }
+  
+  .saf-half2 {
+    width: 563.94px;
+    height: 947px;
+  }
+  
+  .saf_half1_header,
+  .saf-half2-header,
+  .clients-header,
+  .any-question-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .saf-half1-header1 {
+    width: 100%;
+    height: 117px;
+    padding-top: 10px;
+    margin-bottom: 41px;
+  }
+  
+  .saf_half1_header {
+    width: 174px;
+    background-color: #f4f4f4;
+    padding: 0 20px;
+    margin-bottom: 22px;
+    background-color: #d4d4d4;
+  }
+  
+  .safh1-icon {
+    margin-right: 10px;
+  }
+  
+  .safh1-subtitle {
+    color: #1c2752;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .safh1-title {
+    color: #1c2752;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: "Mulish", sans-serif;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+  }
+  
+  /* slider */
+  
+  .slider {
+    border: 1px solid #dddddd;
+    width: 591px;
+    height: 378px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .slider-line {
+    width: 1773px;
+    height: 378px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 0.3s;
+  }
+  
+  .slider-prev,
+  .slider-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .slider-prev {
+    bottom: 38px;
+    left: 40px;
+    background-color: #F8F8F8;
+  }
+  
+  .slider-next {
+    bottom: 38px;
+    left: 101px;
+    background-color: #FFB342;
+  }
+  
+  .slider-item {
+    width: 591px;
+    padding: 40px;
+  }
+  
+  .slider-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+  
+  .slider-person {
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider_person {
+    margin-right: 10px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .slider_person_name {
+    color: #1c2752;
+    font-family: "Mulish", sans-serif;
+    font-size: 22px;
+    line-height: 30.8px;
+    letter-spacing: 0.36px;
+  }
+  
+  .slider_person_city {
+    color: #7e7e7e;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .slider-item-feedback {
+    border-top: 1px solid #dcdcdc;
+    padding-top: 19.05px;
+  }
+  
+  .slider_item_feedback {
+    font-weight: 700;
+    color: #7e7e7e;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .slider_item_feedback span {
+    color: #1c2752;
+  }
+  
+  /* half2 */
+  
+  .saf-half2 {
+    padding-top: 10px;
+    padding-bottom: 32px;
+  }
+  
+  .saf-half2-header {
+    width: 155px;
+    padding: 0 20px;
+    background-color: #d4d4d4;
+    margin-bottom: 22px;
+  }
+  
+  .saf-half2-header-icon {
+    margin-right: 14px;
+  }
+  
+  .saf-half2-header-title {
+    color: #1c2752;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .saf-half2_title {
+    color: #1c2752;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    margin-bottom: 40px;
+  }
+  
+  .form {
+    width: 564px;
+    height: 750px;
+    background-color: #d4d4d4;
+    padding: 70px 40px
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    height: 65px;
+    padding: 19px 44px;
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .input::placeholder,
+  .textarea::placeholder {
+    color: #1c2752;
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .textarea {
+    max-width: 100%;
+    margin-bottom: 35px;
+    height: 130px;
+    resize: none;
+  }
+  
+  .saf-half2-btn {
+    color: #1c2752;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    display: block;
+    width: 100%;
+    background-color: #ffb342;
+    border: 1px solid transparent;
+    padding: 20px 0;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  .saf-half2-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* any question */
+  
+  .any-question {
+    width: 100%;
+    height: 330px;
+    background-color: #ffb342;
+    padding: 40px;
+  }
+  
+  .any-question-header {
+    width: 191px;
+    background-color: #d4d4d4;
+    padding: 0 20px;
+    margin-bottom: 21px;
+  }
+  
+  .any-question-icon {
+    margin-right: 14px;
+  }
+  
+  .any-question-header-title {
+    color: #1c2752;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .any-question-title {
+    color: #1c2752;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    font-size: 25px;
+    line-height: 32.5px;
+    letter-spacing: 0.36px;
+    margin-bottom: 13px;
+  }
+  
+  .any-question-info {
+    color: #1c2752;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    margin-bottom: 24px;
+  }
+  
+  .any-question-phone {
+    display: flex;
+    align-items: center;
+  }
+  
+  .any-question-phone {
+    margin-right: 20px;
+  }
+  
+  .any_question_phone {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Mulish", sans-serif;
+    text-decoration: none;
+    line-height: 45px;
+    letter-spacing: 0.36px;
+  }
+  
+  /* clients */
+  
+  .clients {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .clients-header {
+    width: 134px;
+    margin: 0 auto;
+    background-color: #d4d4d4;
+    padding: 0 20px;
+    margin-bottom: 22px;
+  }
+  
+  .clients-header-icon {
+    margin-right: 14px;
+  }
+  
+  .clients-header-title {
+    color: #1c2752;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .clients-title {
+    color: #1c2752;
+    font-size: 45px;
+    font-family: "Mulish", sans-serif;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    margin-bottom: 44px;
+  }
+  
+  .clients-logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* prices */
+  
+  .prices {
+    width: 100%;
+    min-height: 1352px;
+    height: auto;
+    background-color: #f4f4f4;
+    padding-top: 139px;
+    padding-bottom: 130px;
+  }
+  
+  .prices-inner {
+    max-width: 1200px;
+    min-height: 1082px;
+    height: auto;
+  }
+  
+  .prices-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .prices-header,
+  .price_plan {
+    display: flex;
+    align-items: center;
+  }
+  
+  .prices-header {
+    justify-content: space-between;
+  }
+  
+  .price-plan {
+    width: 592px;
+    margin-top: 10px;
+  }
+  
+  .price_plan {
+    width: 170px;
+    background-color: #fff;
+    padding: 0 20px;
+  }
+  
+  .price-plan-img {
+    margin-right: 14px;
+  }
+  
+  .price-plan-subtitle {
+    color: #1c2752;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .price-title {
+    margin-top: 23px;
+    margin-bottom: 18px;
+  }
+  
+  .price_title {
+    max-width: 497px;
+    color: #1c2752;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: "Mulish", sans-serif;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+  }
+  
+  .price-info {
+    max-width: 585px;
+  }
+  
+  .price-info-text {
+    color: #7e7e7e;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .prices-cards {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    vertical-align: auto;
+  }
+  
+  .price-card {
+    width: 380px;
+    height: 663px;
+    background-color: #fff;
+    padding: 40px;
+    padding-bottom: 50px;
+  }
+  
+  .price-card-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 111px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+  
+  .price-header-title {
+    color: #1c2752;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    margin-bottom: 7px;
+  }
+  
+  .price-header-price {
+    color: #1c2752;
+    font-family: "Mulish", sans-serif;
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: 0.36px;
+  }
+  
+  .price-header-pt2 {
+    position: absolute;
+    left: 177px;
+    bottom: 36px;
+  }
+  
+  .price-header-info {
+    color: #7e7e7e;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+  }
+  
+  .popular {
+    background-color: #ffb342;
+    width: 98px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+  }
+  
+  .popular-text {
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    color: #1c2752;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+  }
+  
+  .price-card-points {
+    padding-top: 29px;
+    margin-bottom: 55px;
+    height: 309px;
+  }
+  
+  .price-card-point {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .price-card-point-img {
+    margin-right: 12px;
+    width: 17px;
+    height: 17px;
+  }
+  
+  .price-card-point-itself {
+    color: #7e7e7e;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .price-card-btn {
+    color: #1c2752;
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    line-height: 30px;
+    background-color: #ffb342;
+    margin-top: 35px;
+    text-decoration: none;
+    text-align: center;
+    padding: 19px 0;
+    margin-bottom: 50px;
+    border: 1px solid transparent;
+    transition: 0.2s;
+  }
+  
+  .price-card-btn:hover {
+    border: 1px solid #1c2752;
+    background: transparent;
+  }
+  
+  .prices-benefits {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 61px;
+  }
+  
+  .prices-benefit1,
+  .prices-benefit2 {
+    display: flex;
+    max-width: 585px;
+  }
+  
+  .prices-benefit-img {
+    margin-right: 15px;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .prices-benefit-title {
+    color: #1c2752;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+    font-family: "Mulish", sans-serif;
+    margin-bottom: 9px;
+  }
+  
+  .prices-benefit-info {
+    width: 501px;
+    color: #7e7e7e;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  /* latest news & articles */
+  
+  .news-and-articles {
+    width: 100%;
+    min-height: 1081px;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 81px;
+  }
+  
+  .news-and-articles-inner {
+    max-width: 1200px;
+    min-height: 861px;
+  }
+  
+  .news-and-articles-header {
+    text-align: center;
+  }
+  
+  .news-and-articles-subheader {
+    display: flex;
+    align-items: center;
+    width: 205px;
+    background-color: #f4f4f4;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    margin-top: 10px;
+  }
+  
+  .subheader-img {
+    margin-right: 10px;
+  }
+  
+  .subheader-title {
+    color: #1c2752;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .news-and-articles-header-title {
+    color: #1c2752;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: "Mulish", sans-serif;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    margin-bottom: 40px;
+  }
+  
+  .news-items {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1190px;
+    margin: 0 auto;
+  }
+  
+  .news-item-text {
+    vertical-align: top;
+  }
+  
+  .news-item {
+    width: 580px;
+    height: 644px;
+  }
+  
+  .news_item_img {
+    width: 100%;
+    display: block;
+  }
+  
+  .news-item-date {
+    display: flex;
+    max-width: 362px;
+    margin: 0 auto;
+    margin-top: -31px;
+    margin-bottom: 22px;
+  }
+  
+  .news-item-date-half1,
+  .news-item-date-half2 {
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    width: 50%;
+  }
+  
+  .news-item-date-half1 {
+    background-color: #ffc368;
+  }
+  
+  .news-item-date-half2 {
+    background-color: #ffb342;
+  }
+  
+  .news-item-date-img {
+    margin-right: 10px;
+  }
+  
+  .news-item-date-name,
+  .news-item-date-date {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+  }
+  
+  .news-item-title {
+    color: #1c2752;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.36px;
+    margin-bottom: 16px;
+  }
+  
+  .news-item-info {
+    color: #7e7e7e;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    margin-bottom: 17px;
+  }
+  
+  .news-item-btn {
+    position: relative;
+    color: #1c2752;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+  }
+  
+  .news-item-btn span {
+    margin-left: 11px;
+  }
+  
+  .news-item-btn:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #1c2752;
+    border-radius: 3px;
+    transition: 0.2s;
+    opacity: 0;
+    left: 0;
+  }
+  
+  .news-item-btn:hover:after {
+    opacity: 1;
+  }
+  
+  /* subscribe */
+  
+  .subscribe {
+    width: 100%;
+    min-height: 328px;
+    height: auto;
+    background-color: #ffb342;
+  }
+  
+  .subscribe-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 141px;
+  }
+  
+  .subscribe-text {
+    width: 410px;
+  }
+  
+  .subscribe-title {
+    color: #1c2752;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    font-size: 32px;
+    line-height: 44.8px;
+    letter-spacing: 0.36px;
+    margin-bottom: 9px;
+  }
+  
+  .subscribe-info {
+    color: #1c2752;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    width: 570px;
+    height: 66px;
+    border: 2px solid #fff;
+    margin-bottom: 36px;
+  }
+  
+  .subscribe-input {
+    width: 68.25%;
+    background-color: transparent;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+  }
+  
+  .subscribe-input::placeholder,
+  .subscribe-input:focus {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+  }
+  
+  .subscribe-btn {
+    display: inline-block;
+    width: 31.75%;
+    border: none;
+    color: #1c2752;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .subscribe-btn:hover {
+    color: #ffb342;
+  }
+  
+  /* footer */
+  
+  .footer {
+    width: 100%;
+    min-height: 560px;
+    height: auto;
+    background-color: #1c2752;
+    padding-top: 49.69px;
+    padding-bottom: 30.31px;
+  }
+  
+  .header-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    padding-top: 41.31px;
+    align-items: center;
+  }
+
+  .footer_logo {
+    display: flex;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  .footer-contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 41px;
+  }
+  
+  .footer-contact {
+    width: 288px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact-img {
+    margin-right: 15px;
+  }
+  
+  .footer-contact-action {
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+  }
+  
+  .footer-contact-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    transition: 0.2s;
+  }
+  
+  .footer-contact-link:hover {
+    color: #ffb342;
+  }
+  
+  .footer-body {
+    display: flex;
+    flex-direction: row;
+    gap: 60px; 
+    width: 100%;
+    height: 305px;
+    padding-top: 15px;
+    padding-bottom: 41px;
+    border-top: 1px solid #4b557d;
+    border-bottom: 1px solid #4b557d;
+  }
+  
+  .footer-announcement {
+    flex-direction: row;
+    width: 401px;
+    height: 223px;
+    margin-right: 44.48px;
+  }
+  
+  .footer-announcement-itself {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    margin-bottom: 68px;
+  }
+  
+  .footer-announcement-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    
+  }
+  
+  .footer-announcement-social:hover {
+    color: #ffb342;
+  }
+  
+  .footer-announcement-social:last-child {
+    margin-right: 0;
+  }
+  
+  .explore,
+  .quick-links {
+    padding-left: 59.52px;
+    padding-right: 21px;
+  }
+  
+  .explore-links {
+    position: relative;
+    margin-left: 40px;
+  }
+  
+  .explore-links:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: #4b557d;
+    width: 223px;
+    height: 1px;
+    left: -120px;
+    top: 210px;
+    transform: rotate(90deg);
+  }
+  
+  .explore-links {
+    display: flex;
+    position: relative;
+  }
+  
+  .explore-title,
+  .quick-links-title,
+  .utility-pages-title {
+    color: #ffb342;
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    left: 0.36px;
+    margin-bottom: 16px;
+  }
+  
+  .explore-list,
+  .quick-links-list,
+  .utility-links-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .explore-link,
+  .quick-links-link,
+  .utility-link {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    transition: 0.2s;
+  }
+  
+  .explore-link:hover,
+  .quick-links-link:hover,
+  .utility-link:hover {
+    color: #ffb342;
+  }
+  
+  .explore_list,
+  .quick-links_list,
+  .utility_list {
+    margin-top: 10px;
+  }
+  
+  .quick-links {
+    position: relative;
+    margin-right: 62px;
+  }
+  
+  .quick-links:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: #4b557d;
+    width: 223px;
+    height: 1px;
+    left: 155px;
+    top: 210px;
+    transform: rotate(90deg);
+  }
+  
+  .utility-pages {
+    margin-left: 45px;
+    padding-left: 21px;
+    padding-right: 59px;
+  }
+  
+  /* media requests*/
+  
+  @media (max-width: 1500px) {
+    .about {
+      padding: 100px 150px;
+      min-height: 0;
+    }
+  
+    .about-inner {
+      max-width: 100%;
+      justify-content: space-around;
+    }
+  
+    .about_image,
+    .about-info {
+      width: 500px;
+    }
+  
+    .about-info2 {
+      margin-top: 20px;
+    }
+  
+    .about-bc-text1,
+    .about-bc-text2 {
+      font-size: 17px;
+      line-height: 22px;
+      width: 100%;
+    }
+  
+    .welcome {
+      margin-top: 0;
+    }
+  
+    .exp1 {
+      width: 160px;
+      height: 179.5px;
+      margin-right: 20px;
+    }
+  
+    .years-digits {
+      font-size: 60px;
+      line-height: 60px;
+      padding-top: 25px;
+    }
+  
+    .years-of-exp {
+      padding: 0 10px;
+      padding-top: 14px;
+      font-size: 16px;
+    }
+  
+    .exp_2 {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media (max-width: 1350px) {
+    .about {
+      padding: 100px 100px;
+      min-height: 0;
+    }
+  
+    .wcu-half1-inner {
+      width: 500px;
+    }
+  
+    .wcu-half1-inner {
+      padding-left: 50px;
+    }
+  
+    .wcu-half2-inner {
+      width: 500px;
+    }
+  
+    .recent-projects-inner,
+    .rec-proj-header {
+      width: 100%;
+    }
+  
+    .recent-projects-item {
+      width: 290px;
+      height: 450px;
+      padding: 15px;
+    }
+  
+    .recent-projects-image {
+      display: block;
+      width: 100%;
+    }
+  
+    .recent-projects-title {
+      width: 100%;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  
+  @media (max-width: 1250px) {
+    .about {
+      padding: 100px 70px;
+    }
+  
+    .services-items {
+      max-width: 790px;
+      margin: 0 auto;
+      padding-bottom: 100px;
+      text-align: center;
+    }
+  
+    .recent-projects-items {
+      flex-wrap: wrap;
+      max-width: 625px;
+    }
+  
+    .saf-inner {
+      justify-content: space-around;
+    }
+  
+    .saf-half1 {
+      width: 550px;
+    }
+  
+    .slider {
+      width: 550px;
+    }
+  
+    .slider-item {
+      width: 550px;
+      margin-right: 50px;
+    }
+  
+    .clients-logos {
+      justify-content: space-around;
+    }
+  
+    .prices-header {
+      padding: 0 40px;
+    }
+  
+    .prices-cards {
+      max-width: 100%;
+      justify-content: space-around;
+    }
+  
+    .price-card {
+      width: 32%;
+      height: 663px;
+      background-color: #fff;
+      padding: 40px;
+      padding-bottom: 50px;
+    }
+  
+    .prices-benefits {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .prices-benefit1 {
+      margin-bottom: 20px;
+    }
+  
+    .news-items {
+      justify-content: space-around;
+    }
+  
+    .news-item {
+      width: 48.7%;
+    }
+  
+    .subscribe-inner {
+      justify-content: space-around;
+    }
+  
+    .header-footer {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .footer {
+      min-height: 800px;
+    }
+  
+    .footer-body {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .footer-contacts {
+      justify-content: space-around;
+    }
+  
+    .footer-announcement {
+      width: 100%;
+      height: 120px;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 0px;
+    }
+  
+    .footer-announcement-socials {
+      margin-top: 30px;
+    }
+  
+    .footer-announcement-itself {
+      width: 400px;
+    }
+  
+    .footer-logo {
+      padding-bottom: 20px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .header-inner,
+    .header-contact {
+      justify-content: space-around;
+    }
+  
+    .header-contact {
+      width: 500px;
+    }
+  
+    .hc-text {
+      font-size: 17px;
+    }
+  
+    .hc-contact {
+      font-size: 14px;
+    }
+  
+    .intro-text {
+      padding-left: 50px;
+    }
+  
+    /*about*/
+  
+    .about {
+      padding: 70px 50px;
+      min-height: 0;
+    }
+  
+    .welcome-text {
+      font-size: 16px;
+    }
+  
+    .about-bc-title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  
+    .about_image,
+    .about-info {
+      width: 480px;
+    }
+  
+    .about-bc-text1,
+    .about-bc-text2 {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .years-of-exp {
+      padding: 0 10px;
+      padding-top: 14px;
+      font-size: 16px;
+    }
+  
+    .exp_2 {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+  
+    .offers-slider {
+      width: 1000px;
+    }
+  
+    .labels label {
+      width: 220px;
+    }
+  
+    .lbl-inner {
+      padding: 14px 35px;
+    }
+  
+    .lbl-name {
+      font-size: 17px;
+    }
+  
+    .offers-slide-title {
+      font-size: 40px;
+    }
+  
+    .offers-slide-text1,
+    .offers-slide-text2 {
+      font-size: 15px;
+      padding-right: 20px;
+    }
+  
+    .offers-slide-text1,
+    .offers-slide-text2 {
+      max-width: 450px;
+    }
+  
+    .offers-slide-btn {
+      font-size: 17px;
+      padding: 15px 35px;
+    }
+  
+    .wcu-half2 {
+      padding-left: 50px;
+    }
+  
+    .wcuh2-title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    .wcuh2-info {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 30px;
+      padding-right: 20px;
+    }
+  
+    .wchu2-list-title {
+      line-height: 25px;
+    }
+  
+    .wchu2-list-info {
+      font-size: 15px;
+      line-height: 25px;
+      padding-right: 30px;
+    }
+  
+    .recent-projects-inner {
+      width: 100%;
+    }
+  
+    .saf-half2,
+    .form {
+      width: 500px;
+    }
+  
+    .price-info {
+      max-width: 500px;
+      text-align: right;
+    }
+  
+    .news-item-info {
+      height: 150px;
+    }
+  
+    .subscribe-form {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 1120px) {
+    .about_image,
+    .about-info {
+      width: 450px;
+    }
+  
+    .about-bc-text1,
+    .about-bc-text2 {
+      line-height: 18px;
+    }
+  
+    .exp_2 {
+      font-size: 14px;
+      line-height: 15px;
+      margin-bottom: 10px;
+    }
+  
+    .wcu-half1-inner,
+    .wcu-half2-inner {
+      width: 450px;
+    }
+  
+    .wcu-half1-inner {
+      padding-left: 20px;
+    }
+  
+    .wcu-half2 {
+      padding-left: 30px;
+    }
+  
+    .wcuh2-title {
+      font-size: 30px;
+      line-height: 40px;
+      padding-right: 50px;
+    }
+  
+    .wcuh2-info {
+      font-size: 16px;
+      line-height: 22px;
+      padding-right: 20px;
+    }
+  
+    .saf-half1 {
+      width: 450px;
+    }
+  
+    .slider {
+      width: 450px;
+    }
+  
+    .slider-item {
+      width: 450px;
+      margin-right: 150px;
+    }
+  
+    .slider_item_feedback {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  
+    .any_question_phone {
+      font-size: 25px;
+    }
+  
+    .price-card {
+      padding: 25px;
+    }
+  
+    .price-card-point-itself {
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+    }
+  
+    .price-card-point {
+      height: 25px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .about-image {
+      width: 400px;
+      margin-right: 20px;
+      margin-top: 30px;
+    }
+    .about_image {
+      display: block;
+      width: 400px;
+    }
+  
+    .welcome {
+      margin-top: 25px;
+    }
+  
+    .about-bc-title {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  
+    .about-info {
+      width: 400px;
+    }
+  
+    .about-bc-text1,
+    .about-bc-text2 {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  
+    .exp1 {
+      width: 100px;
+      height: 120px;
+    }
+  
+    .years-digits {
+      margin-top: 30%;
+      color: #ffb342;
+      font-size: 40px;
+      padding-top: 0;
+      line-height: 20px;
+    }
+  
+    .years-of-exp {
+      padding: 0;
+      padding-top: 16px;
+      font-size: 14px;
+    }
+  
+    .exp_2 {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+  
+    .offers-slider {
+      width: 850px;
+    }
+  
+    .labels label {
+      width: 180px;
+    }
+  
+    .lbl-inner {
+      padding: 14px 20px;
+    }
+  
+    .offers-slide-title {
+      font-size: 35px;
+    }
+  
+    .offers-slide-text1,
+    .offers-slide-text2 {
+      font-size: 14px;
+      line-height: 22px;
+      padding-right: 70px;
+    }
+  
+    .offers-slide-text1,
+    .offers-slide-text2 {
+      max-width: 400px;
+    }
+  
+    .offers-slide-img {
+      width: 350px;
+      padding-right: 20px;
+    }
+  
+    .wchu2-list-info {
+      font-size: 15px;
+      line-height: 25px;
+      padding-right: 80px;
+    }
+  
+    .wcu-half2 {
+      padding-left: 20px;
+    }
+  
+    .wcuh2-info {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  
+    .popular {
+      width: 65px;
+      padding: 0 5px;
+    }
+  
+    .popular-text {
+      font-size: 11px;
+      line-height: 24px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .intro-nav {
+      width: 500px;
+    }
+  
+    .intro-nav-link {
+      margin: 0 10px;
+      font-size: 17px;
+    }
+  
+    .intro-btn {
+      margin-right: 10px;
+      padding: 15px 30px;
+      font-size: 15px;
+    }
+  
+    .saf-half2,
+    .form {
+      width: 400px;
+    }
+  
+    .input,
+    .textarea {
+      padding: 19px 20px;
+    }
+  
+    .input::placeholder,
+    .textarea::placeholder {
+      font-size: 14px;
+    }
+  
+    .news-item-title {
+      font-size: 25px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 940px) {
+    .about_image {
+      width: 100%;
+    }
+  
+    .wcu-half1-inner {
+      width: 400px;
+    }
+  
+    .wchu2-list-info {
+      line-height: 22px;
+      padding-right: 100px;
+    }
+  
+    .wcuh1-item {
+      width: 360px;
+    }
+  
+    .wchu1-num {
+      font-size: 20px;
+    }
+  
+    .wchu1-info {
+      font-size: 20px;
+    }
+  
+    .price-info {
+      max-width: 440px;
+    }
+  
+    .news-item-text {
+      text-align: center;
+      padding: 0 20px;
+    }
+  
+    .subscribe-inner {
+      flex-direction: column;
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+  
+    .subscribe-text {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  
+    .subscribe-form {
+      width: 70%;
+    }
+  
+    .footer-announcement {
+      margin-bottom: 30px;
+    }
+  
+    .footer-contact {
+      width: 33%;
+      padding-left: 25px;
+    }
+  
+    .footer-contact-action {
+      font-size: 17px;
+      line-height: 26px;
+    }
+  
+    .footer-contact-link {
+      font-size: 14px;
+    }
+  
+    .footer-contact-img {
+      width: 55px;
+      height: 55px;
+    }
+  
+    .footer-announcement-itself {
+      width: 40%;
+      font-size: 15px;
+    }
+  
+    .footer-announcement-social {
+      padding: 15px;
+    }
+  
+    .explore-links:before,
+    .quick-links:after {
+      top: 148px;
+    }
+  
+    .explore-link,
+    .quick-links-link,
+    .utility-link {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  
+  @media (max-width: 890px) {
+    .offers-slider {
+      width: 720px;
+    }
+  
+    .labels label {
+      width: 180px;
+      margin: 0 10px;
+    }
+  
+    .offers-title {
+      font-size: 35px;
+      line-height: 50px;
+    }
+  
+    .services-title,
+    .recent_projects_title,
+    .safh1-title,
+    .saf-half2_title,
+    .clients-title,
+    .price_title,
+    .news-and-articles-header-title {
+      font-size: 35px;
+    }
+  
+    .offers-header-info {
+      font-size: 15px;
+      padding: 0 35px;
+    }
+  
+    .offers-slide-text1,
+    .offers-slide-text2 {
+      font-size: 14px;
+      line-height: 22px;
+      padding-right: 70px;
+    }
+  
+    .offers-slide-text1,
+    .offers-slide-text2 {
+      max-width: 320px;
+    }
+  
+    .offers-slide-img {
+      width: 350px;
+      padding-right: 70px;
+    }
+  
+    .offers-slide-btn {
+      font-size: 15px;
+      line-height: 20px;
+      margin-top: 15px;
+      padding: 10px 20px;
+    }
+  
+    .services_header_info {
+      max-width: 590px;
+      margin: 0 auto;
+    }
+  
+    .services-items {
+      max-width: 590px;
+    }
+  
+    .slider-prev {
+      bottom: 25px;
+      left: 160px;
+    }
+  
+    .slider-next {
+      bottom: 25px;
+      left: 230px;
+    }
+  
+    .service-item {
+      width: 280px;
+      height: 278px;
+      padding: 20px 15px;
+    }
+  
+    .service-item-title {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  
+    .service-item-info {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+  
+    .service-item-btn {
+      font-size: 15px;
+    }
+  
+    .wcu-half1-inner {
+      width: 350px;
+    }
+  
+    .wcuh1-item {
+      width: 310px;
+    }
+  
+    .wcuh2-info {
+      padding-right: 100px;
+    }
+  
+    .wchu2-list-info {
+      padding-right: 150px;
+    }
+  
+    .saf-inner {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .saf-half2,
+    .form {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .any-question-header {
+      margin: 0 auto;
+      margin-bottom: 21px;
+    }
+  
+    .any-question-title,
+    .any-question-info {
+      text-align: center;
+    }
+  
+    .slider-item-feedback {
+      text-align: center;
+    }
+  
+    .saf-half2,
+    .safh1-title {
+      text-align: center;
+    }
+    .safh1-title,
+    .saf-half2_title {
+      padding-top: 20px;
+    }
+  
+    .saf-half2-header,
+    .saf_half1_header {
+      margin: 0 auto;
+    }
+  
+    .clients {
+      padding-bottom: 140px;
+    }
+  
+    .clients-logos {
+      width: 450px;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+  
+    .client-logo {
+      margin-bottom: 20px;
+    }
+    .price-title,
+    .price-info {
+      max-width: 370px;
+    }
+  
+    .price-info-text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .price-card {
+      padding: 15px;
+      padding-top: 30px;
+    }
+  
+    .price-card-point-itself {
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+    }
+  
+    .price-header-price {
+      font-size: 25px;
+    }
+  
+    .price-header-pt2 {
+      left: 145px;
+    }
+  
+    .price-card-btn {
+      font-size: 17px;
+    }
+  
+    .news-item-date {
+      max-width: 320px;
+      margin-top: -22px;
+      margin-bottom: 22px;
+    }
+  
+    .news-item-date-half1,
+    .news-item-date-half2 {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      width: 50%;
+    }
+  
+    .news-item-title {
+      font-size: 22px;
+      line-height: 35px;
+    }
+  
+    .news-item-info {
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .overheader-title {
+      font-size: 14px;
+    }
+  
+    .header-inner {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .header-contact {
+      padding-top: 10px;
+      padding-right: 50px;
+      padding-left: 50px;
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    .header-phone-img,
+    .header-mail-img {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .intro-nav-and-btn {
+      position: absolute;
+      top: 0;
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .intro-nav {
+      padding: 10px 0;
+      margin-left: 90px;
+    }
+  
+    .intro-btn {
+      margin-right: 0;
+      line-height: 10px;
+    }
+  
+    .intro-text {
+      padding-left: 0;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .intro-slogan {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .intro-title {
+      font-size: 50px;
+    }
+  
+    .intro-text-btn {
+      padding: 15px 30px;
+      font-size: 17px;
+    }
+  
+    .welcome {
+      margin: 25px auto;
+    }
+  
+    .about-inner {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-bc-title,
+    .about-bc-text1,
+    .about-bc-text2 {
+      text-align: center;
+    }
+  
+    .about-image {
+      width: 400px;
+      margin-right: 0;
+    }
+  
+    .about-info2 {
+      align-items: center;
+    }
+  
+    .exp1 {
+      margin-left: 10%;
+    }
+  
+    .years-of-exp {
+      padding-top: 20px;
+      font-size: 12px;
+    }
+  
+    .offers {
+      min-height: 1100px;
+      padding-top: 60px;
+    }
+  
+    .offers-slide {
+      width: 500px;
+      height: 1100px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .offers-slider {
+      width: 500px;
+      height: 800px;
+    }
+  
+    .offers_slider {
+      width: 500px;
+      height: 800px;
+      margin: 0 auto;
+      box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+    }
+  
+    .offers-title,
+    .saf-half2_title,
+    .safh1-title,
+    .clients-title,
+    .price_title,
+    .news-and-articles-header-title {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  
+    .safh1-title {
+      margin-top: 20px;
+    }
+  
+    .services-title {
+      font-size: 25px;
+    }
+  
+    .offers-slide-text1,
+    .offers-slide-text2 {
+      padding-right: 0;
+    }
+  
+    .off-sl-info {
+      width: 100%;
+      background-color: #f4f4f4;
+      padding: 0 50px;
+    }
+  
+    .offers-slide-img {
+      width: 320px;
+      padding-right: 0;
+    }
+  
+    .labels label {
+      display: inline-block;
+      width: 100px;
+      height: 68px;
+      cursor: pointer;
+      margin: 0 5px;
+      border: 1px solid #1c2752;
+      background-color: transparent;
+      transition: 0.2s;
+    }
+  
+    .lbl-inner {
+      flex-direction: column;
+      padding: 5px 40px;
+    }
+  
+    .lbl-icon {
+      margin-right: 0;
+    }
+  
+    .lbl-name {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  
+    #btn1:checked ~ .offers_slider .slider-items {
+      transform: translate(0);
+    }
+  
+    #btn2:checked ~ .offers_slider .slider-items {
+      transform: translate(-500px);
+    }
+  
+    #btn3:checked ~ .offers_slider .slider-items {
+      transform: translate(-1000px);
+    }
+  
+    .why-choose-us-inner {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .wcu-half1,
+    .wcu-half2 {
+      max-width: 767px;
+      width: 100%;
+    }
+    .wcu-half2 {
+      padding-left: 0;
+    }
+  
+    .wcu-half1-inner {
+      width: 80%;
+      padding: 100px 0;
+    }
+  
+    .wcu-half2-inner {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .wcu-half2-list {
+      margin: 0 auto;
+    }
+  
+    .wcu-half2-inner,
+    .wcuh2-info,
+    .wcuh2-title {
+      padding-right: 0;
+    }
+  
+    .wcuh2-header {
+      margin: 0 auto;
+    }
+  
+    .wcuh1-item {
+      width: 80%;
+      margin: 20px auto;
+    }
+  
+    .wchu2-item {
+      width: 100%;
+      height: 120px;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+  
+    .wchu2-list-img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .wchu2-list-text {
+      text-align: center;
+    }
+  
+    .wchu2-list-title {
+      width: 270px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  
+    .wchu2-list-info {
+      margin-left: 55px;
+    }
+  
+    .wcu-half2-list {
+      width: 480px;
+    }
+  
+    .wchu2-list-info {
+      padding-right: 50px;
+    }
+  
+    .wcuh2-title,
+    .wcuh2-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .wcuh2-title,
+    .recent_projects_title {
+      font-size: 25px;
+    }
+  
+    .wchu1-num {
+      width: 27%;
+      padding-left: 4%;
+      letter-spacing: 0;
+      font-size: 20px;
+    }
+  
+    .wchu1-info {
+      font-size: 18px;
+      font-family: "Mulish", sans-serif;
+      line-height: 35px;
+      letter-spacing: 0.36px;
+    }
+  
+    .saf-half2,
+    .form {
+      width: 90%;
+    }
+  
+    .prices-cards,
+    .prices-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .price-plan {
+      margin-left: 220px;
+      text-align: center;
+    }
+  
+    .price_plan {
+      margin-left: 100px;
+    }
+  
+    .price-info {
+      max-width: 80%;
+      text-align: center;
+    }
+  
+    .price-card {
+      width: 380px;
+      height: 663px;
+      background-color: #fff;
+      padding: 40px;
+      padding-bottom: 50px;
+      margin-bottom: 20px;
+    }
+  
+    .price-card-header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      height: 111px;
+      border-bottom: 1px solid #d7d7d7;
+    }
+  
+    .price-header-title {
+      color: #1c2752;
+      font-size: 20px;
+      font-family: "Inter", sans-serif;
+      line-height: 30px;
+      letter-spacing: 0.4px;
+      margin-bottom: 7px;
+    }
+  
+    .price-header-price {
+      color: #1c2752;
+      font-family: "Mulish", sans-serif;
+      font-size: 32px;
+      line-height: 35.2px;
+      letter-spacing: 0.36px;
+    }
+  
+    .price_title {
+      line-height: 50px;
+    }
+  
+    .price-card-point-itself {
+      color: #7e7e7e;
+      font-family: "Inter", sans-serif;
+      font-size: 17px;
+      line-height: 27px;
+      letter-spacing: 0.36px;
+    }
+  
+    .price-header-pt2 {
+      left: 177px;
+    }
+  
+    .news-items {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .news-item {
+      width: 580px;
+      min-height: 644px;
+      height: auto;
+      margin-bottom: 50px;
+    }
+  
+    .news-item-title {
+      font-size: 30px;
+      line-height: 42px;
+    }
+  
+    .news-item-info {
+      margin-bottom: 0;
+    }
+  
+    .button {
+      position: fixed;
+      z-index: 1000;
+      display: block;
+    }
+  
+    .overheader {
+      display: none;
+    }
+  
+    .header {
+      display: none;
+    }
+  
+    #intro_nav_btn {
+      display: none;
+    }
+  
+    .logo_responsive {
+      display: block;
+      position: absolute;
+      right: 5px;
+      top: 20px;
+      width: 150px;
+    }
+  
+    .overheader-inner-resp {
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+    }
+  
+    .overheader-title-resp {
+      color: #1c2752;
+      font-family: "Inter", sans-serif;
+      font-size: 20px;
+      padding-top: 10px;
+      margin-bottom: 20px;
+    }
+  
+    .overheader-link-resp {
+      color: #1c2752;
+      font-size: 25px;
+      margin-right: 10px;
+    }
+  
+    .header-contact-resp {
+      text-align: center;
+      margin-top: 40px;
+    }
+  
+    .header-mail-resp {
+      margin-bottom: 20px;
+    }
+  
+    .header-mail-img-resp,
+    .header-phone-img-resp {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .hc-text-resp {
+      color: #1c2752;
+      font-family: "Inter", sans-serif;
+      font-size: 20px;
+    }
+  
+    .hc-contact-resp {
+      text-decoration: none;
+      color: #7e7e7e;
+      font-family: "Inter", sans-serif;
+      font-size: 20px;
+    }
+  
+    .intro-nav-and-btn-resp {
+      width: 250px;
+      margin: 0 auto;
+    }
+  
+    .intro-nav-resp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .intro-nav-link-resp {
+      color: #000;
+      font-family: "Mulish", sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+  
+    .intro-btn-resp {
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 30px;
+      text-decoration: none;
+      color: #000;
+      font-family: "Mulish", sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      border: 2px solid #ffb342;
+      padding: 10px;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 730px) {
+    .footer {
+      min-height: 1100px;
+    }
+  
+    .footer-contacts {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-contact {
+      width: 280px;
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .footer-announcement {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-announcement-itself {
+      width: 70%;
+      margin-left: 40px;
+      text-align: center;
+    }
+  
+    .footer-announcement-socials {
+      margin-top: -30px;
+      margin-left: 40px;
+    }
+  
+    .explore-links {
+      flex-direction: column;
+    }
+  
+    .explore,
+    .quick-links,
+    .utility-links {
+      margin-bottom: 30px;
+    }
+  
+    .explore {
+      margin-top: 40px;
+    }
+  
+    .explore,
+    .quick-links,
+    .utility-pages {
+      width: 180px;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: 40px;
+    }
+  
+    .quick-links {
+      position: relative;
+      margin-right: 0;
+    }
+  
+    .utility-pages {
+      margin-left: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .explore-links:before,
+    .quick-links:after {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .services_header_info {
+      padding: 0 25px;
+    }
+  
+    .services-items {
+      max-width: 270px;
+    }
+  
+    .service-item-info {
+      font-size: 13.5px;
+    }
+  
+    .recent-projects-items {
+      max-width: 320px;
+    }
+  
+    .prices-benefit1,
+    .prices-benefit2 {
+      max-width: 400px;
+    }
+  
+    .prices-benefit-info {
+      width: 300px;
+      font-size: 14px;
+    }
+  
+    .news-item {
+      width: 90%;
+    }
+  
+    .news-item-title,
+    .subscribe-title {
+      font-size: 25px;
+    }
+  }
+  
+  @media (max-width: 578px) {
+    .intro-title {
+      font-size: 40px;
+      line-height: 60px;
+      padding: 0 30px;
+      padding-top: 40px;
+    }
+  
+    .header-contact {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  
+    .intro-nav-link {
+      margin: 0 10px;
+      font-size: 14px;
+    }
+  
+    .intro-nav {
+      margin-left: 140px;
+    }
+  
+    .offers-header {
+      margin-bottom: 50px;
+    }
+  
+    .off-sl-subtitle {
+      font-size: 15px;
+    }
+  
+    .offers-slide {
+      width: 350px;
+      height: 1100px;
+      flex-direction: column;
+      text-align: center;
+      padding: 25px;
+    }
+  
+    .offers-slider {
+      width: 350px;
+      height: 800px;
+    }
+  
+    .offers_slider {
+      width: 350px;
+      height: 800px;
+      margin: 0 auto;
+      box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+    }
+  
+    .offers-slide-img {
+      margin-top: 20px;
+    }
+  
+    .off-sl-info {
+      margin-top: 20px;
+    }
+  
+    #btn1:checked ~ .offers_slider .slider-items {
+      transform: translate(0);
+    }
+  
+    #btn2:checked ~ .offers_slider .slider-items {
+      transform: translate(-350px);
+    }
+  
+    #btn3:checked ~ .offers_slider .slider-items {
+      transform: translate(-700px);
+    }
+  
+    .subscribe-input {
+      padding-left: 15px;
+    }
+  
+    .subscribe-input::placeholder,
+    .subscribe-input:focus,
+    .subscribe-btn {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 510px) {
+    .wcu-half2 {
+      min-height: 950px;
+      height: auto;
+    }
+  
+    .wcu-half2-list {
+      width: 400px;
+      margin: 0 auto;
+    }
+  
+    .wchu2-item {
+      margin-bottom: 70px;
+    }
+  
+    .clients-logos {
+      width: 250px;
+      flex-wrap: no-wrap;
+    }
+  
+    .saf-half1 {
+      width: 350px;
+    }
+  
+    .slider {
+      width: 350px;
+    }
+  
+    .slider-item {
+      width: 350px;
+      padding: 20px;
+      margin-right: 250px;
+    }
+  
+    .slider_item_feedback {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    .slider_person_name {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.36px;
+    }
+  
+    .slider_person_city {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+    }
+  
+    .slider-prev {
+      bottom: 55px;
+      left: 110px;
+    }
+  
+    .slider-next {
+      bottom: 55px;
+      left: 180px;
+    }
+  
+    .any-question-info {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      margin-bottom: 35px;
+    }
+  
+    .any_question_phone {
+      font-size: 18px;
+    }
+  
+    .form {
+      width: 95%;
+      height: 700px;
+      padding-top: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 55px;
+    }
+  
+    .client-logo {
+      margin-bottom: 30px;
+    }
+  
+    .news-item-title,
+    .subscribe-title {
+      font-size: 22px;
+    }
+  
+    .news-item-info {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 17px;
+    }
+  
+    .subscribe-info {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 475px) {
+    .overheader-title {
+      padding-bottom: 21px;
+    }
+    .overheader-inner {
+      flex-direction: column;
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+  
+    .header {
+      width: 100%;
+      height: auto;
+      background-color: #f5f5f5;
+    }
+  
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 129px;
+    }
+    .header-contact {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .header-mail {
+      margin-left: 20px;
+    }
+  
+    .about {
+      padding: 40px 50px;
+      min-height: 0;
+    }
+  
+    .about-image,
+    .about_image {
+      width: 345px;
+    }
+  
+    .about-bc-text1,
+    .about-bc-text2 {
+      padding: 10px 15%;
+    }
+  
+    .labels {
+      top: -90px;
+    }
+  
+    .wcu-half2-list {
+      width: 350px;
+    }
+  
+    .wchu2-item {
+      margin-bottom: 90px;
+    }
+  
+    .wchu1-info {
+      font-size: 16px;
+      padding-left: 10px;
+    }
+  
+    .wchu1-num {
+      font-size: 16px;
+    }
+  
+    .price_title {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  
+    .price-info {
+      max-width: 100%;
+    }
+  
+    .price-card {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .news-item-title {
+      letter-spacing: 0;
+    }
+  
+    .news-item-text {
+      padding: 0;
+    }
+  
+    .news-item-btn {
+      font-size: 15px;
+    }
+  
+    .subscribe-form {
+      width: 90%;
+    }
+  
+    .subscribe-text {
+      width: 90%;
+    }
+  
+    .footer-announcement-itself {
+      width: 90%;
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 380px) {
+    .intro-nav-link {
+      margin: 0 5px;
+      font-size: 12px;
+    }
+  
+    .intro-nav {
+      margin-left: 230px;
+    }
+  
+    .intro-title {
+      font-size: 25px;
+      line-height: 50px;
+      padding: 0 10px;
+      padding-top: 40px;
+    }
+  
+    .is-text {
+      font-size: 14px;
+      line-height: 27px;
+    }
+  
+    .about-info2 {
+      flex-direction: column;
+    }
+  
+    .exp1 {
+      margin-left: 5%;
+      margin-bottom: 30px;
+    }
+  
+    .exp2 {
+      width: 250px;
+      margin-left: 5%;
+    }
+  
+    .about-image,
+    .about_image {
+      width: 290px;
+    }
+  
+    .labels label {
+      width: 80px;
+    }
+  
+    .lbl-inner {
+      flex-direction: column;
+      padding: 5px 40px;
+    }
+  
+    .lbl-icon {
+      margin-right: 0;
+    }
+  
+    .lbl-name {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  
+    .offers-slide {
+      width: 280px;
+      padding: 18px;
+    }
+  
+    .off-sl-info {
+      padding: 0 20px;
+    }
+  
+    .offers-slider,
+    .offers_slider {
+      width: 280px;
+    }
+  
+    .offers-slide-img {
+      width: 250px;
+      margin-top: 90px;
+    }
+  
+    #btn1:checked ~ .offers_slider .slider-items {
+      transform: translate(0);
+    }
+  
+    #btn2:checked ~ .offers_slider .slider-items {
+      transform: translate(-280px);
+    }
+  
+    #btn3:checked ~ .offers_slider .slider-items {
+      transform: translate(-560px);
+    }
+  
+    .wcu-half1-inner {
+      width: 90%;
+    }
+  
+    .wcu-half2-list {
+      width: 300px;
+    }
+  
+    .wchu2-item {
+      margin-bottom: 110px;
+    }
+  
+    .wchu1-info {
+      font-size: 13px;
+      padding-left: 4%;
+    }
+  
+    .saf-half1 {
+      width: 300px;
+    }
+  
+    .slider {
+      width: 300px;
+    }
+  
+    .slider-item {
+      width: 300px;
+      padding: 15px;
+      margin-right: 300px;
+    }
+  
+    .slider_person_name {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.36px;
+    }
+  
+    .slider_person_city {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+    }
+  
+    .sl_quote,
+    .any-question-phone img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .slider-prev {
+      bottom: 35px;
+      left: 80px;
+    }
+  
+    .slider-next {
+      bottom: 35px;
+      left: 160px;
+    }
+  
+    .any-question {
+      width: 100%;
+      height: 330px;
+      background-color: #ffb342;
+      padding: 15px;
+      padding-top: 40px;
+    }
+  
+    .any-question-title {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+  
+    .any_question_phone {
+      font-size: 18px;
+    }
+  
+    .form {
+      width: 100%;
+    }
+  
+    .prices-benefit1,
+    .prices-benefit2 {
+      max-width: 90%;
+    }
+  
+    .prices-benefit-info {
+      width: 100%;
+    }
+  
+    .price-card-point-itself {
+      font-size: 15px;
+    }
+  
+    .price-header-pt2 {
+      left: 160px;
+    }
+  
+    .news-item {
+      min-height: 550px;
+      margin-bottom: 20px;
+    }
+  
+    .news-item-title {
+      font-size: 20px;
+      line-height: 35px;
+      margin-bottom: 0;
+    }
+  
+    .news-item-date-name,
+    .news-item-date-date {
+      font-size: 12px;
+    }
+  
+    .subscribe-input {
+      padding-left: 10px;
+    }
+  
+    .subscribe-title {
+      line-height: 35px;
+    }
+  }
+  
+  @media (max-width: 340px) {
+    .offers-header-info {
+      font-size: 13px;
+      padding: 0 15px;
+      line-height: 20px;
+    }
+  
+    .wcu-half2-list {
+      width: 290px;
+    }
+  
+    .news-item-date-name,
+    .news-item-date-date {
+      font-size: 11px;
+    }
+  
+    .news-item-title {
+      font-size: 18px;
+    }
+  
+    .news-item-info {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 0;
+    }
+  }
+  
